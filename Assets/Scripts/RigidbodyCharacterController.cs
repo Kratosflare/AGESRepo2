@@ -20,7 +20,7 @@ public class RigidbodyCharacterController : MonoBehaviour
         var inputDirection = new Vector3(input.x,0,input.y);
         if (rigidbody.velocity.magnitude<maxSpeed)
         {
-            rigidbody.AddForce(inputDirection * acclereationForce);
+            rigidbody.AddForce(inputDirection * acclereationForce, ForceMode.Acceleration);
         }
      
     }
