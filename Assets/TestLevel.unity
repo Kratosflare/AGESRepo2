@@ -241,7 +241,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1077887979}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 68450502bdafa604793615acc2f14cb1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
@@ -323,6 +323,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   acclereationForce: 10
   maxSpeed: 2
+  stoppingPhysicMaterial: {fileID: 13400000, guid: 0c8597b95b24afb4b8db413241f3ba0a,
+    type: 2}
+  movingPhysicMaterial: {fileID: 13400000, guid: 757330b2086679041aa465113fc75ea9,
+    type: 2}
 --- !u!54 &1077887985
 Rigidbody:
   m_ObjectHideFlags: 0
