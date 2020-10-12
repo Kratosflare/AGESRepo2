@@ -16,10 +16,17 @@ public class ContextualMessageController : MonoBehaviour
 
 
         canvasGroup.alpha = 0;
+        StartCoroutine(ShowMessage("Testing", 5));
     }
-    private void ShowMessage(string message, float duration)
+    private IEnumerator ShowMessage(string message, float duration)
     {
+        canvasGroup.alpha = 1;
         messageText.text = message;
+        
+        // wait time
+       
+       yield return new WaitForSeconds(duration);
+        canvasGroup.alpha = 0;
     }
 }
 
