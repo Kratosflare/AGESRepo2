@@ -16,17 +16,30 @@ public class ContextualMessageController : MonoBehaviour
 
 
         canvasGroup.alpha = 0;
-      
+
     }
     private IEnumerator ShowMessage(string message, float duration)
     {
         canvasGroup.alpha = 1;
         messageText.text = message;
-        
+
         // wait time
-       
-       yield return new WaitForSeconds(duration);
+
+        yield return new WaitForSeconds(duration);
         canvasGroup.alpha = 0;
+    }
+    private void OnContextualMessageTriggered()
+    {
+        StartCoroutine(ShowMessage("Basic test", 5));
+    }
+
+    private void OnEnable()
+    {
+        ContextualMessageTrigger.ContextualMessageTriggered += OnContextualMessageTriggered;
+    }
+    private void OnDisable()
+    {
+        ContextualMessageTrigger.ContextualMessageTriggered -= OnContextualMessageTriggered;
     }
 }
 
