@@ -364,6 +364,7 @@ GameObject:
   - component: {fileID: 709184828}
   - component: {fileID: 709184827}
   - component: {fileID: 709184832}
+  - component: {fileID: 709184833}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -1005,17 +1006,9 @@ MonoBehaviour:
   assetGuid: 
   m_Mesh: {fileID: 54336607}
   m_IsSelectable: 1
-  m_SelectedFaces: 0e000000
-  m_SelectedEdges:
-  - a: 56
-    b: 57
-  - a: 58
-    b: 56
-  - a: 57
-    b: 59
-  - a: 59
-    b: 58
-  m_SelectedVertices: 38000000390000003a0000003b000000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!4 &709184831
 Transform:
   m_ObjectHideFlags: 0
@@ -1042,7 +1035,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eb4b507ff52e40f58f68c2065e32636, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manageVisibility: 1
+  manageVisibility: 0
+--- !u!114 &709184833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709184826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8591e7e22d726a45a23e3514ff90a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &860879901
 GameObject:
   m_ObjectHideFlags: 0
