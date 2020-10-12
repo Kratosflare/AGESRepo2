@@ -7,6 +7,7 @@ public class ContextualMessageTrigger : MonoBehaviour
 {
     [SerializeField]
     private string message = "Default message";
+    [TextArea(3,5)]
 
     [SerializeField]
     private float messageDuration = 1;
