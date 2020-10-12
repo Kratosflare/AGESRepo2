@@ -16,7 +16,7 @@ public class ContextualMessageController : MonoBehaviour
 
 
         canvasGroup.alpha = 0;
-        StartCoroutine(ShowMessage("Testing", 5));
+      
     }
     private IEnumerator ShowMessage(string message, float duration)
     {
