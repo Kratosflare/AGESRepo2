@@ -3783,6 +3783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 195584dc9996ef946822068adfce0bc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeOutDuration: 3
 --- !u!43 &2078969901
 Mesh:
   m_ObjectHideFlags: 0
