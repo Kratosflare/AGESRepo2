@@ -6,7 +6,7 @@ using UnityEngine;
 public class ContextualMessageController : MonoBehaviour
 {
     [SerializeField]
-    private float fadeOutDuration = 1;
+    private float fadeOutDuration = 3;
  
     private CanvasGroup canvasGroup;
     private TMP_Text messageText;
