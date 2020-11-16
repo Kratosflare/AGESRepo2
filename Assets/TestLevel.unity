@@ -513,7 +513,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 172363042}
-  m_LocalRotation: {x: 0.35230008, y: -0.31322342, z: -0.77057767, w: 0.42893568}
+  m_LocalRotation: {x: 0.3543114, y: 0.3254515, z: 0.7144676, w: 0.5080166}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -587,7 +587,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 298189546}
-  m_LocalRotation: {x: 0.34435922, y: -0.29875323, z: -0.7777434, w: 0.4327569}
+  m_LocalRotation: {x: 0.34502637, y: 0.31277198, z: 0.7184212, w: 0.51672184}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2612,7 +2612,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1077887979}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.09, y: 29, z: -0.02}
+  m_LocalPosition: {x: 14.57, y: 29, z: 4.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3473,7 +3473,7 @@ GameObject:
   - component: {fileID: 1283551427}
   - component: {fileID: 1283551432}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: DoorTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3753,17 +3753,9 @@ MonoBehaviour:
   assetGuid: 
   m_Mesh: {fileID: 2060885302}
   m_IsSelectable: 1
-  m_SelectedFaces: 04000000
-  m_SelectedEdges:
-  - a: 16
-    b: 17
-  - a: 18
-    b: 16
-  - a: 17
-    b: 19
-  - a: 19
-    b: 18
-  m_SelectedVertices: 10000000110000001200000013000000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!4 &1283551431
 Transform:
   m_ObjectHideFlags: 0
@@ -3771,12 +3763,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1283551426}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.8, y: 26.58, z: -2.09}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.5700006, y: 0.20999908, z: -1.8399999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 1560594245}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1283551432
 MonoBehaviour:
@@ -4657,7 +4649,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1374363601}
   m_LocalRotation: {x: 0.567063, y: -0.31104758, z: 0.24410725, w: 0.7225653}
-  m_LocalPosition: {x: -7.909341, y: 30.38668, z: 1.0360235}
+  m_LocalPosition: {x: 13.42987, y: 30.38668, z: 2.0121126}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 172363044}
@@ -4744,7 +4736,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1423048414}
-  m_LocalRotation: {x: 0.33000785, y: -0.28184384, z: -0.7827995, w: 0.44596407}
+  m_LocalRotation: {x: 0.33499786, y: 0.29129466, z: 0.7289415, w: 0.52112204}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6710,6 +6702,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1523393319}
+  - {fileID: 1283551431}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6742,8 +6735,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
+    _json: '{"declarations":{"collection":{"$content":[{"name":"DoorTrigger","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 1283551426}
 --- !u!95 &1560594248
 Animator:
   serializedVersion: 3
@@ -7338,8 +7332,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1794001578}
-  m_LocalRotation: {x: 0.12134408, y: -0.8248935, z: 0.19358693, w: 0.51705945}
-  m_LocalPosition: {x: -7.909341, y: 30.38668, z: 1.0360235}
+  m_LocalRotation: {x: 0.22165297, y: 0.23610741, z: -0.055409957, w: 0.9444856}
+  m_LocalPosition: {x: 13.42987, y: 30.38668, z: 2.0121126}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
