@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class RigidbodyCharacterController : MonoBehaviour
 {
     [SerializeField]
-    private float acclereationForce = 10;
+    private float acclerationForce = 10;
 
     [SerializeField]
     private float maxSpeed = 2;
@@ -14,7 +15,7 @@ public class RigidbodyCharacterController : MonoBehaviour
     private PhysicMaterial stoppingPhysicMaterial, movingPhysicMaterial;
 
     private new Rigidbody rigidbody;
-    private Vector2 input;
+    public Vector2 input;
     private new Collider collider;
 
     private void Start()
@@ -38,13 +39,15 @@ public class RigidbodyCharacterController : MonoBehaviour
 
         if (rigidbody.velocity.magnitude<maxSpeed)
         {
-            rigidbody.AddForce(inputDirection * acclereationForce, ForceMode.Acceleration);
+            rigidbody.AddForce(inputDirection * acclerationForce, ForceMode.Acceleration);
         }
      
     }
-    private void Update()
+
+
+   public void OnMove(InputAction.CallbackContext context)
     {
-        input.x = Input.GetAxisRaw("Horizontal");
-        input.y = Input.GetAxisRaw("Vertical");
+        input = context.ReadValue<Vector2>();
     }
+
 }
